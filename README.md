@@ -1,4 +1,4 @@
-# Python SMS API - Version 1.0
+# Swift SMS API Sample Code - Version 1.0
 
 This is the official **Swift SMS API Sample** sample provided by [Full Stack Team Six](https://fullstackteamsix.com/) to makes it easy for developers to integrate our API in their code.
 
