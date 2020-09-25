@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		155E8C89C64DD24F0C36E9C8 /* Pods_sms_api_sample_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B04072101D5A82C167178A0 /* Pods_sms_api_sample_swift.framework */; };
 		E14758B0251C95120056B6CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14758AF251C95120056B6CF /* AppDelegate.swift */; };
 		E14758B2251C95120056B6CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14758B1251C95120056B6CF /* SceneDelegate.swift */; };
 		E14758B4251C95120056B6CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14758B3251C95120056B6CF /* ViewController.swift */; };
@@ -16,7 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E14758AC251C95120056B6CF /* sms-api-sample-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sms-api-sample-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18974C16B08C39387B5B3CD5 /* Pods-sms-api-sample-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sms-api-sample-swift.debug.xcconfig"; path = "Target Support Files/Pods-sms-api-sample-swift/Pods-sms-api-sample-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		256BE4BE4BF10FD53C5B2D43 /* Pods-sms-api-sample-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sms-api-sample-swift.release.xcconfig"; path = "Target Support Files/Pods-sms-api-sample-swift/Pods-sms-api-sample-swift.release.xcconfig"; sourceTree = "<group>"; };
+		3B04072101D5A82C167178A0 /* Pods_sms_api_sample_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sms_api_sample_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14758AC251C95120056B6CF /* SMS iOS Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS iOS Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14758AF251C95120056B6CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E14758B1251C95120056B6CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E14758B3251C95120056B6CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,24 +35,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155E8C89C64DD24F0C36E9C8 /* Pods_sms_api_sample_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29FA1F3B5B2D0803F1C63087 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B04072101D5A82C167178A0 /* Pods_sms_api_sample_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FA4875F42FCCC5581D6B861 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18974C16B08C39387B5B3CD5 /* Pods-sms-api-sample-swift.debug.xcconfig */,
+				256BE4BE4BF10FD53C5B2D43 /* Pods-sms-api-sample-swift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E14758A3251C95120056B6CF = {
 			isa = PBXGroup;
 			children = (
 				E14758AE251C95120056B6CF /* sms-api-sample-swift */,
 				E14758AD251C95120056B6CF /* Products */,
+				6FA4875F42FCCC5581D6B861 /* Pods */,
+				29FA1F3B5B2D0803F1C63087 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		E14758AD251C95120056B6CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E14758AC251C95120056B6CF /* sms-api-sample-swift.app */,
+				E14758AC251C95120056B6CF /* SMS iOS Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E14758C0251C95150056B6CF /* Build configuration list for PBXNativeTarget "sms-api-sample-swift" */;
 			buildPhases = (
+				8CEA223F994F563185C77547 /* [CP] Check Pods Manifest.lock */,
 				E14758A8251C95120056B6CF /* Sources */,
 				E14758A9251C95120056B6CF /* Frameworks */,
 				E14758AA251C95120056B6CF /* Resources */,
+				874B606451882A9C88AF26D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +111,7 @@
 			);
 			name = "sms-api-sample-swift";
 			productName = "sms-api-sample-swift";
-			productReference = E14758AC251C95120056B6CF /* sms-api-sample-swift.app */;
+			productReference = E14758AC251C95120056B6CF /* SMS iOS Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		874B606451882A9C88AF26D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sms-api-sample-swift/Pods-sms-api-sample-swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sms-api-sample-swift/Pods-sms-api-sample-swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sms-api-sample-swift/Pods-sms-api-sample-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CEA223F994F563185C77547 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sms-api-sample-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E14758A8251C95120056B6CF /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		E14758C1251C95150056B6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18974C16B08C39387B5B3CD5 /* Pods-sms-api-sample-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +361,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teamsix.sms-api-sample-swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SMS iOS Sample";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +369,7 @@
 		};
 		E14758C2251C95150056B6CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256BE4BE4BF10FD53C5B2D43 /* Pods-sms-api-sample-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +379,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teamsix.sms-api-sample-swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SMS iOS Sample";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
